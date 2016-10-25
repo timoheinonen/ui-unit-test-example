@@ -66,7 +66,12 @@ public class SomePanelTest {
     }
 
     @Test
-    public void testOpeningAndClosingDialogsWork() {
+    public void testOpeningAndClosingDialogsWork() throws InterruptedException {
         //TODO: add waiting for open and close
+    }
+
+    @Test
+    public void testThatAlwaysFailsAndGeneratesScreenshot() {
+        frameFixture.button("nappiJotaEiOleOlemassa").click();
     }
 }
